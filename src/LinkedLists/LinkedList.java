@@ -1,5 +1,7 @@
 package LinkedLists;
 
+import java.util.Scanner;
+
 public class LinkedList {             //linkedlist class
 
      static class Node{
@@ -41,17 +43,30 @@ public class LinkedList {             //linkedlist class
 
 
     public static void main(String[] args) {              //main
-
+        Scanner in=new Scanner(System.in);
         LinkedList list=new LinkedList();
-        list.head=new Node(10);
-        list.head.next=new Node(12);
-        list.head.next.next=new Node(11);
-        list.head.next.next.next=new Node(11);
-        list.head.next.next.next.next=new Node(12);
+        System.out.println("Enter the # nodes ");           //insertion or user input
+        int x=in.nextInt();
+        System.out.println("Enter the nodes ");
+        for(int i=0;i<x;i++){
+            int a=in.nextInt();
+            Node n= new Node(a);
+
+            if(list.head==null){
+                list.head=n;
+            }
+            else{
+                Node b=list.head;
+                while(b.next!=null){
+                    b=b.next;
+                }
+                b.next=n;
+            }
+        }
 
         System.out.println("Linked list before removing duplicates");
         list.printlist(head);
-
+        System.out.println();
         list.remove();
         System.out.println("Linked list after removing duplicates");
         list.printlist(head);
