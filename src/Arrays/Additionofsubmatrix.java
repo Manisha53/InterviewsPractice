@@ -27,8 +27,8 @@ public class Additionofsubmatrix {
         int c2=in.nextInt();
         int sum=0;
 
-        for(int i=r1+1;i<=r2;i++){
-            for(int j=c1+1;j<=c2;j++) {
+        for(int i=r1;i<=r2;i++){
+            for(int j=c1;j<=c2;j++) {
                 sum += a[i][j];
             }
         }
