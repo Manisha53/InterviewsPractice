@@ -1,3 +1,15 @@
+/*
+Input:
+2
+i.like.this.program.very.much
+pqr.mno
+
+Output:
+much.very.program.this.like.i
+mno.pqr
+ */
+
+
 package Strings;
 
 import java.util.*;
@@ -9,13 +21,6 @@ public class Reverse {
         int n=in.nextInt();
         System.out.println("Enter the string words");
 
-//        String s=in.nextLine();
-//
-//        while(s!=null){
-//            if(s.contains(" ")){
-//
-//            }
-//        }
         Stack<String> stack = new Stack<String>();
 
         for(int i=0;i<n;i++){
