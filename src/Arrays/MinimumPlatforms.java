@@ -35,7 +35,7 @@ public class MinimumPlatforms {
                 j++;
             }
         }
-System.out.println("Minimum number of platforms required is: "+ res);
+        System.out.println("Minimum number of platforms required is: "+ res);
 
     }
 }
