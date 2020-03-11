@@ -13,6 +13,9 @@ public class BikeRace {
         if(d<0){
             System.out.println("Invalid Input");
         }
+        else if(d==0){
+            System.out.println("Bonus:"+0);
+        }
         else{
             while(temp>0){
                 temp=temp/10;
