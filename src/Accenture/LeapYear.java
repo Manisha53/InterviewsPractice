@@ -10,7 +10,7 @@ public class LeapYear {
         int t=year;
         int c=0;
         while(t>0){
-            t=t%10;
+           // t=t%10;
             c++;
             t=t/10;
         }
