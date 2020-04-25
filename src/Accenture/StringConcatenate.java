@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-class StringConcate{
+class StringConcatenate {
     public static void main (String[] args) {
         Scanner in=new Scanner(System.in);
         System.out.println("Inmate's name:");
