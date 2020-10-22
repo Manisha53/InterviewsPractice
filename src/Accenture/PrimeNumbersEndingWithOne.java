@@ -60,8 +60,8 @@ public class Main
 	}
 	public static boolean isprime(int n){
 	    boolean flag=true;
-	    if(n==1 || n==0) flag=true;
-	    else if(n>=2){
+	    if(n==1 || n==0 || n==2) flag=true;
+	    else if(n>2){
 	        for(int i=2;i<=Math.sqrt(n);i++){
 	            if(n%i==0){
 	               flag=false;
